@@ -215,7 +215,7 @@ function fixTypo(array, index, name){
   array[index].push({name})
   return array[index];
 }
-console.log(artists[8].name ="Vincent Van Gogh");
+console.log(artists, 8,{name} ="Vincent Van Gogh");
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -227,12 +227,12 @@ console.log(artists[8].name ="Vincent Van Gogh");
  /* For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(array, index) {
-  array[index];
-    return `The artist at index ${id} is ${name}.`;
-    
+function getArtistByIndex(array, index, id , name)
+  artists[index].push({id}), ({name});
+  return array[index];
 }
-  console.log(getArtistByIndex(artists, 0));
+getArtistByIndex(artists, 0 , 0 , 'Amedeo Modigliani');
+ 
   /**
 
 
@@ -288,9 +288,9 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(array){
+    artistArray = [];
 
-  /* Code here */
 
 }
 
