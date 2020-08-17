@@ -240,16 +240,22 @@ console.log(artists, 0, 0,  {string}= `The artist at ${0} is ${`Amedeo Modiglian
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array, index, name, years, arrayCopy){
-       arrayCopy = [array];
-      arrayCopy.push(...array);
-      return arrayCopy;
-      arrayCopy[index].push({name})
-      arrayCopy[index].push({years})
-      return arrayCopy[index], ({name});
-      return arrayCopy[index], ({years});
+function get20s(array, index, name, years){
+      
+  const artistCopy = [{name}, {years}];
+      array[index].push({name})
+      array[index].push({years})
+      for(let i = 0; i<array.length; i++)
+      if (array[i].years >= 1900 && array[i].years <= 2000 );
+      array[index].push(array[i])
+      return array[index], {years};
 }
-console.log(arrayCopy);
+        console.log(artists,0,);
+        
+
+      
+
+
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -262,11 +268,11 @@ console.log(arrayCopy);
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(array, index) {
-    array[index-1];
+    array[index-1-1];
     return array;
   }
   removeArtist(artists[0]);
-  console.log(artists);
+  
   
  
 
@@ -283,13 +289,12 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
-
-  }
-
-/* Task 7: Create a function called lotsOfArt() that takes one argument: 
+function addArtist(array, index, id, name,  genre, years, nationality, bio){
+  array[index].push();
+      return array;
+}
+console.log(artists, 0 , id = 21, name = `Juan Lagunas`, genre = `web design`, years = 2000 - 2020, nationality = `American`, bio = `Lorem ipsum`);
+/* 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
 
