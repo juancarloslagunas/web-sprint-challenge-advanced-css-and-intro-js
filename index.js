@@ -211,11 +211,12 @@ console.log(artists[0].name);
 console.log(artists[2].bio);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-function fixTypo(array, index, name){
+function fixTypo(array,index,  name){
+  array[index].splice(8, 1)
   array[index].push({name})
-  return array[index];
+  return array;
 }
-console.log(artists, 8,{name} ="Vincent Van Gogh");
+console.log(artists, 0 ,name = "Vincent Van Gogh");
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -242,7 +243,7 @@ console.log(artists, 0, 0,  {string}= `The artist at ${0} is ${`Amedeo Modiglian
 
 function get20s(array, index, name, years){
       
-  const artistCopy = [{name}, {years}];
+  const artistCopy = [];
       array[index].push({name})
       array[index].push({years})
       for(let i = 0; i<array.length; i++)
@@ -267,13 +268,13 @@ function get20s(array, index, name, years){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(array, index) {
-    array[index-1-1];
+function removeArtist(array) {
+    array.pop(0)
     return array;
   }
-  removeArtist(artists[0]);
+  console.log(removeArtist(artists, 0 ));
   
-  
+
  
 
 /**
@@ -301,13 +302,9 @@ console.log(artists, 0 , id = 21, name = `Juan Lagunas`, genre = `web design`, y
 and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
-
-function lotsOfArt(array){
-    artistArray = [];
-
-
-}
-
+    let filteredArtists = artists.filter(artist => artist.paintings >= 100); 
+console.log(filteredArtists)
+ 
 
 
 // 🎨🎨 STRETCH 🎨🎨//
